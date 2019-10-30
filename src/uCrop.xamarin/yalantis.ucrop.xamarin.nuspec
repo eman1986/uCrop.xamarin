@@ -22,5 +22,9 @@
         <dependency id="Xamarin.AndroidX.Transition" version="1.0.1-preview02" />
       </group>
     </dependencies>
-  </metadata>
+    </metadata>
+    <files>
+        <file src="bin\Debug\yalantis.ucrop.xamarin.dll" target="lib\MonoAndroid90" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.pdb" target="lib\MonoAndroid90" />
+    </files>
 </package>
