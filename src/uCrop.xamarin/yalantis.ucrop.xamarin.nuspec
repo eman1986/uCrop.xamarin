@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>yalantis.ucrop.xamarin</id>
+    <version>2.2.4</version>
+    <title>yalantis.ucrop.xamarin</title>
+    <description>Xamarin binding for the uCrop library</description>
+    <summary>Xamarin binding for the uCrop library</summary>
+    <authors>Ed Lomonaco</authors>
+    <owners>Ed Lomonaco</owners>
+    <projectUrl>https://github.com/eman1986/uCrop.xamarin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <tags>android, xamarin, ucrop, image-cropper, cropper</tags>
+    <releaseNotes>
+        Based off of uCrop v2.2.4-native
+    </releaseNotes>
+    <dependencies>
+      <group targetFramework="monoandroid90">
+        <dependency id="Xamarin.AndroidX.AppCompat" version="1.0.2-preview02" />
+        <dependency id="Xamarin.AndroidX.ExifInterface" version="1.0.0-preview02" />
+        <dependency id="Xamarin.AndroidX.Transition" version="1.0.1-preview02" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -9,24 +9,10 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>uCrop.xamarin</RootNamespace>
-    <AssemblyName>uCrop.xamarin</AssemblyName>
+    <RootNamespace>yalantis.ucrop.xamarin</RootNamespace>
+    <AssemblyName>yalantis.ucrop.xamarin</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>yalantis.ucrop.xamarin</PackageId>
-    <Title>Xamarin Android Image Cropper</Title>
-    <Summary>Xamarin binding for the uCrop library</Summary>
-    <description>Xamarin binding for the uCrop library</description>
-    <PackageVersion>2.2.4</PackageVersion>
-    <PackageReleaseNotes>
-      Based off of uCrop v2.2.4-native
-    </PackageReleaseNotes>
-    <Authors>Ed Lomonaco</Authors>
-    <Owners>Ed Lomonaco</Owners>
-    <PackageProjectUrl>https://github.com/eman1986/uCrop.xamarin</PackageProjectUrl>
-    <PackageTags>android, xamarin, ucrop, image-cropper, cropper</PackageTags>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <LangVersion>8</LangVersion>
@@ -75,7 +61,6 @@
     <LibraryProjectZip Include="Jars\ucrop.aar" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Square.OkHttp3" Version="3.12.1" />
     <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.0.2-preview02" />
     <PackageReference Include="Xamarin.AndroidX.ExifInterface" Version="1.0.0-preview02" />
     <PackageReference Include="Xamarin.AndroidX.Transition" Version="1.0.1-preview02" />
