@@ -43,8 +43,10 @@ namespace uCrop.xamarin.demo
                 case RequestCamera when resultCode == Result.Ok:
                     CropImage();
                     break;
-                case RequestGallery when resultCode == Result.Ok:
-                    // todo:
+                case RequestGallery when resultCode == Result.Ok && data != null:
+                    _photoUri = data.Data;
+
+                    CropImage();
                     break;
                 case UCrop.RequestCrop when resultCode == Result.Ok:
                     if (data == null)
@@ -84,7 +86,7 @@ namespace uCrop.xamarin.demo
 
         private void BtnGalleryOnClick(object sender, EventArgs e)
         {
-            Toast.MakeText(this, "TODO", ToastLength.Short).Show();
+            ShowGallery();
         }
 
         private async void BtnCameraOnClick(object sender, EventArgs e)
@@ -118,7 +120,16 @@ namespace uCrop.xamarin.demo
             });
         }
 
-        private static File CreateTempFile(string path, string prefix = "", string suffix = ".png")
+        private void ShowGallery()
+        {
+            var galleryIntent = new Intent();
+            galleryIntent.SetType("image/*");
+            galleryIntent.SetAction(Intent.ActionGetContent);
+
+            StartActivityForResult(Intent.CreateChooser(galleryIntent, "Select Picture"), RequestGallery);
+        }
+
+        private static File CreateTempFile(string path, string prefix = "")
         {
             var tempDir = new File(path);
 
@@ -127,7 +138,7 @@ namespace uCrop.xamarin.demo
                 tempDir.Mkdirs();
             }
 
-            return File.CreateTempFile(prefix, suffix, tempDir);
+            return File.CreateTempFile(prefix, ".png", tempDir);
         }
 
         private void CropImage()
