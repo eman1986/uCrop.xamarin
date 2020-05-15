@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>yalantis.ucrop.xamarin</id>
+    <version>2.2.5</version>
+    <title>yalantis.ucrop.xamarin</title>
+    <description>Xamarin binding for the uCrop library</description>
+    <summary>Xamarin binding for the uCrop library</summary>
+    <authors>Ed Lomonaco</authors>
+    <owners>Ed Lomonaco</owners>
+    <projectUrl>https://github.com/eman1986/uCrop.xamarin</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <tags>android, xamarin, ucrop, image-cropper, cropper</tags>
+    <releaseNotes>
+        Based off of uCrop v2.2.5
+    </releaseNotes>
+    <dependencies>
+      <group targetFramework="monoandroid10.0">
+        <dependency id="Xamarin.AndroidX.AppCompat" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.ExifInterface" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.Transition" version="1.3.1" />
+      </group>
+      <group targetFramework="monoandroid90">
+        <dependency id="Xamarin.AndroidX.AppCompat" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.ExifInterface" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.Transition" version="1.3.1" />
+      </group>
+      <group targetFramework="monoandroid81">
+        <dependency id="Xamarin.AndroidX.AppCompat" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.ExifInterface" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.Transition" version="1.3.1" />
+      </group>
+      <group targetFramework="monoandroid80">
+        <dependency id="Xamarin.AndroidX.AppCompat" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.ExifInterface" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.Transition" version="1.3.1" />
+      </group>
+      <group targetFramework="monoandroid71">
+        <dependency id="Xamarin.AndroidX.AppCompat" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.ExifInterface" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.Transition" version="1.3.1" />
+      </group>
+      <group targetFramework="monoandroid70">
+        <dependency id="Xamarin.AndroidX.AppCompat" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.ExifInterface" version="1.1.0" />
+        <dependency id="Xamarin.AndroidX.Transition" version="1.3.1" />
+      </group>
+    </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Debug\yalantis.ucrop.xamarin.dll" target="lib\MonoAndroid10.0" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.pdb" target="lib\MonoAndroid10.0" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.dll" target="lib\MonoAndroid90" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.pdb" target="lib\MonoAndroid90" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.dll" target="lib\MonoAndroid81" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.pdb" target="lib\MonoAndroid81" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.dll" target="lib\MonoAndroid80" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.pdb" target="lib\MonoAndroid80" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.dll" target="lib\MonoAndroid71" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.pdb" target="lib\MonoAndroid71" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.dll" target="lib\MonoAndroid70" />
+        <file src="bin\Debug\yalantis.ucrop.xamarin.pdb" target="lib\MonoAndroid70" />
+    </files>
+</package>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yalantis.ucrop.native.xamarin", "yalantis.ucrop.native.xamarin\yalantis.ucrop.native.xamarin.csproj", "{084FA4AB-D26E-4C3C-91A1-1C3DCAEF8ED8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ucrop.native.xamarin.demo", "ucrop.native.xamarin.demo\ucrop.native.xamarin.demo.csproj", "{A987C136-38E2-41DC-82ED-8DA95EBBAD21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{084FA4AB-D26E-4C3C-91A1-1C3DCAEF8ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084FA4AB-D26E-4C3C-91A1-1C3DCAEF8ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084FA4AB-D26E-4C3C-91A1-1C3DCAEF8ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084FA4AB-D26E-4C3C-91A1-1C3DCAEF8ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A987C136-38E2-41DC-82ED-8DA95EBBAD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A987C136-38E2-41DC-82ED-8DA95EBBAD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A987C136-38E2-41DC-82ED-8DA95EBBAD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A987C136-38E2-41DC-82ED-8DA95EBBAD21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
