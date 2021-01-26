@@ -1,0 +1,35 @@
+name: NuGet_Publish
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+      env:
+          NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_TOKEN}}  
+    - name: Build and generate uCrop
+      run: |
+        cd src/uCrop/yalantis.ucrop.xamarin
+        dotnet nuget restore
+        dotnet pack yalantis.ucrop.xamarin.csproj -c Release
+
+    - name: Build and generate uCrop.Native
+      run: |
+        cd src/uCrop.Native/yalantis.ucrop.native.xamarin
+        dotnet nuget restore
+        dotnet pack yalantis.ucrop.native.xamarin.csproj -c Release
