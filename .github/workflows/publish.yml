@@ -16,25 +16,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1.x
-    - name: Setup Xamarin.Android
-      uses: maxim-lobanov/setup-xamarin@v1
-      with:
-        mono-version: latest
-        xamarin-android-version: latest
       env:
           NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_TOKEN}}  
     - name: Build and generate uCrop
       run: |
         cd src/uCrop/yalantis.ucrop.xamarin
-        dotnet restore
-        dotnet pack yalantis.ucrop.xamarin.csproj -c Release
+        nuget restore
+        msbuild yalantis.ucrop.xamarin.csproj -t:pack /p:Configuration=Release
 
     - name: Build and generate uCrop.Native
       run: |
         cd src/uCrop.Native/yalantis.ucrop.native.xamarin
-        dotnet restore
-        dotnet pack yalantis.ucrop.native.xamarin.csproj -c Release
+        nuget restore
+        msbuild yalantis.ucrop.native.xamarin.csproj -t:pack /p:Configuration=Release
