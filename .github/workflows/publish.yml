@@ -20,6 +20,11 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.x
+    - name: Setup Xamarin.Android
+      uses: maxim-lobanov/setup-xamarin@v1
+      with:
+        mono-version: latest
+        xamarin-android-version: latest
       env:
           NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_TOKEN}}  
     - name: Build and generate uCrop
