@@ -1,5 +1,7 @@
 # uCrop.xamarin
 
+![NuGet_Publish](https://github.com/eman1986/uCrop.xamarin/workflows/NuGet_Publish/badge.svg?branch=master)
+
 **uCrop** (Based on uCrop 2.2.5)
 
 ![Nuget](https://img.shields.io/nuget/dt/yalantis.ucrop.xamarin)
