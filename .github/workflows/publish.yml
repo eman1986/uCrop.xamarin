@@ -25,11 +25,11 @@ jobs:
     - name: Build and generate uCrop
       run: |
         cd src/uCrop/yalantis.ucrop.xamarin
-        dotnet nuget restore
+        dotnet restore
         dotnet pack yalantis.ucrop.xamarin.csproj -c Release
 
     - name: Build and generate uCrop.Native
       run: |
         cd src/uCrop.Native/yalantis.ucrop.native.xamarin
-        dotnet nuget restore
+        dotnet restore
         dotnet pack yalantis.ucrop.native.xamarin.csproj -c Release
