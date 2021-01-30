@@ -12,7 +12,7 @@
     <RootNamespace>yalantis.ucrop.xamarin</RootNamespace>
     <AssemblyName>yalantis.ucrop.xamarin</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <LangVersion>8</LangVersion>
@@ -35,6 +35,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -59,9 +61,9 @@
     <LibraryProjectZip Include="Jars\ucrop.aar" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.1.0" />
-    <PackageReference Include="Xamarin.AndroidX.ExifInterface" Version="1.1.0" />
-    <PackageReference Include="Xamarin.AndroidX.Transition" Version="1.3.1" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.6" />
+    <PackageReference Include="Xamarin.AndroidX.ExifInterface" Version="1.3.2.1" />
+    <PackageReference Include="Xamarin.AndroidX.Transition" Version="1.3.1.6" />
     <PackageReference Include="Xamarin.Build.Download" Version="0.10.0" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
