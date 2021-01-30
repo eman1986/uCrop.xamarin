@@ -16,14 +16,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      env:
-          NUGET_AUTH_TOKEN: ${{secrets.NUGET_API_TOKEN}}  
     - name: Build and generate uCrop
       run: |
         cd src/uCrop/yalantis.ucrop.xamarin
         dotnet restore
         msbuild yalantis.ucrop.xamarin.csproj /p:Configuration=Release
         nuget pack yalantis.ucrop.xamarin.nuspec
+        nuget push *.nupkg -k ${{secrets.NUGET_API_TOKEN}}
 
     - name: Build and generate uCrop.Native
       run: |
@@ -31,3 +30,4 @@ jobs:
         dotnet restore
         msbuild yalantis.ucrop.native.xamarin.csproj /p:Configuration=Release
         nuget pack yalantis.ucrop.native.xamarin.nuspec
+        nuget push *.nupkg -k ${{secrets.NUGET_API_TOKEN}}
