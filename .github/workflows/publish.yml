@@ -22,7 +22,7 @@ jobs:
         dotnet restore
         msbuild yalantis.ucrop.xamarin.csproj /p:Configuration=Release
         nuget pack yalantis.ucrop.xamarin.nuspec
-        nuget push *.nupkg -k ${{secrets.NUGET_API_TOKEN}}
+        nuget push "*.nupkg" -k ${{secrets.NUGET_API_TOKEN}} -s https://api.nuget.org/v3/index.json
 
     - name: Build and generate uCrop.Native
       run: |
@@ -30,4 +30,4 @@ jobs:
         dotnet restore
         msbuild yalantis.ucrop.native.xamarin.csproj /p:Configuration=Release
         nuget pack yalantis.ucrop.native.xamarin.nuspec
-        nuget push *.nupkg -k ${{secrets.NUGET_API_TOKEN}}
+        nuget push "*.nupkg" -k ${{secrets.NUGET_API_TOKEN}} -s https://api.nuget.org/v3/index.json
