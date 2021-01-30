@@ -59,9 +59,9 @@
     <LibraryProjectZip Include="Jars\ucrop.aar" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.1.0" />
-    <PackageReference Include="Xamarin.AndroidX.ExifInterface" Version="1.1.0" />
-    <PackageReference Include="Xamarin.AndroidX.Transition" Version="1.3.1" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.6" />
+    <PackageReference Include="Xamarin.AndroidX.ExifInterface" Version="1.3.2.1" />
+    <PackageReference Include="Xamarin.AndroidX.Transition" Version="1.3.1.6" />
     <PackageReference Include="Xamarin.Build.Download" Version="0.10.0" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
