@@ -1,5 +1,7 @@
 # uCrop.xamarin
 
+**This project will no longer be updated as I've moved to developing using native code**
+
 ![NuGet_Publish](https://github.com/eman1986/uCrop.xamarin/workflows/NuGet_Publish/badge.svg?branch=master)
 
 **uCrop** (Based on uCrop 2.2.6)
